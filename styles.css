@@ -1,0 +1,112 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #7412d6; 
+    --branco: #FFFFFF;
+    --lilas-claro: #f4ebff; 
+    --lilas-vibrante: #823dfb; 
+    --roxo-escuro: #1c0349; 
+    --roxo-gradiente: linear-gradient(97.54deg, #823dfb 35.49%, #a34ef7 165.37%); 
+    --fonte-principal: "Poppins";
+    --fonte-secundario: "Josefin Sans";
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--preto);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--roxo-escuro);
+    color: var(--branco);
+}
+
+button, .btn {
+    background-color: var(--lilas-vibrante);
+    color: var(--branco);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--fonte-principal);
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--roxo-escuro);
+    transform: scale(1.05);
+}
+
+button:focus, .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(162, 75, 191, 0.5);
+}
+
+a {
+    color: var(--roxo-escuro);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--lilas-vibrante);
+    text-decoration: underline;
+}
+
+input:focus, textarea:focus {
+    border: 2px solid var(--roxo-escuro);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(162, 75, 191, 0.2); 
+}
+
+.container {
+    background-color: var(--lilas-claro);
+    padding: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--roxo-escuro);
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+header {
+    background: var(--roxo-gradiente); 
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--roxo-escuro);
+    padding: 1em;
+    text-align: center;
+}
+
+.container a {
+    color: var(--lilas-vibrante);
+}
+
+.container a:hover {
+    color: var(--roxo-escuro);
+}
+
+input:focus, textarea:focus {
+    border: 2px solid var(--roxo-escuro);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(162, 75, 191, 0.2);
+}
